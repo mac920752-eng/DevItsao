@@ -28,25 +28,36 @@ margin-top:20px;
 background:white;
 padding:20px;
 border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 </style>
+
+<script>
+function mostrar(id){
+document.querySelectorAll(".section").forEach(s=>s.style.display="none");
+document.getElementById(id).style.display="block";
+}
+</script>
+
 </head>
 
 <body>
 
 <h1>Desarrollo Full Stack</h1>
 
-<!-- BOTON REGRESAR AL CV -->
-<a href="cv.html">
-<button>← Volver al CV</button>
-</a>
-
-<br><br>
-
+<!-- BOTONES -->
 <button onclick="mostrar('info')">¿Qué es?</button>
 <button onclick="mostrar('temas')">Temas</button>
 <button onclick="mostrar('tec')">Tecnologías</button>
 
+<br><br>
+
+<!-- BOTON AL CV -->
+<a href="cv_diego.html">
+<button>Ver CV Diego →</button>
+</a>
+
+<!-- CONTENIDO -->
 <div id="info" class="section">
 <h2>¿Qué es?</h2>
 <p>Asignatura enfocada en crear aplicaciones web completas usando front-end y back-end.</p>
@@ -66,13 +77,6 @@ border-radius:10px;
 <h2>Tecnologías</h2>
 <p>HTML, CSS, Git, Angular, Firebase.</p>
 </div>
-
-<script>
-function mostrar(id){
-document.querySelectorAll(".section").forEach(s=>s.style.display="none");
-document.getElementById(id).style.display="block";
-}
-</script>
 
 </body>
 </html>
