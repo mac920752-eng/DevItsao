@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Desarrollo Full Stack</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+background:#eef2ff;
+padding:40px;
+}
+
+button{
+padding:12px 20px;
+margin:10px;
+border:none;
+background:#667eea;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.section{
+display:none;
+margin-top:20px;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Desarrollo Full Stack</h1>
+
+<button onclick="mostrar('info')">¿Qué es?</button>
+<button onclick="mostrar('temas')">Temas</button>
+<button onclick="mostrar('tec')">Tecnologías</button>
+
+<div id="info" class="section">
+<h2>¿Qué es?</h2>
+<p>Asignatura enfocada en crear aplicaciones web completas usando front-end y back-end.</p>
+</div>
+
+<div id="temas" class="section">
+<h2>Temas</h2>
+<ul>
+<li>Fundamentos Full Stack</li>
+<li>Interfaces Web</li>
+<li>Patrones de diseño</li>
+<li>Angular</li>
+</ul>
+</div>
+
+<div id="tec" class="section">
+<h2>Tecnologías</h2>
+<p>HTML, CSS, Git, Angular, Firebase.</p>
+</div>
+
+<script>
+function mostrar(id){
+document.querySelectorAll(".section").forEach(s=>s.style.display="none");
+document.getElementById(id).style.display="block";
+}
+</script>
+
+</body>
+</html>
