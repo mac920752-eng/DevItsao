@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Diego Maceda Garzón</title>
+    <style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #1e2f44;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        header p {
+            margin: 5px 0 20px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 0.9em;
+            flex-wrap: wrap;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+        h2 {
+            color: #1e2f44;
+            font-size: 1.2em;
+            border-bottom: 2px solid #d1d8e0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .profile-text {
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .skills-header {
+            background-color: #1e2f44;
+            color: white;
+            font-size: 0.8em;
+            padding: 8px;
+            text-align: center;
+        }
+        .skills-cell {
+            padding: 10px 5px;
+            font-size: 0.9em;
+            vertical-align: top;
+        }
+        ul {
+            padding-left: 15px;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+        .project-item {
+            margin-bottom: 15px;
+        }
+        .project-item strong {
+            display: block;
+            color: #2c3e50;
+        }
+        @media print {
+            body { background: none; padding: 0; }
+            .cv-container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header>
+        <h1>Diego Maceda Garzón</h1>
+        <p>Estudiante de Tecnología e Informática</p>
+        <div class="contact-bar">
+            <span>📍 Acatlán de Osorio, Puebla</span>
+            <span>📧 correo@ejemplo.com</span>
+            <span>📱 123 456 7890</span>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="left-col">
+            <div class="section">
+                <h2>Perfil Profesional</h2>
+                <p class="profile-text">
+                    Estudiante responsable y proactivo con un marcado interés en el sector de tecnología. Poseo habilidades sólidas en análisis de información, redacción técnica y desarrollo de proyectos. Me distingo por mi facilidad para el trabajo en equipo y mi capacidad de adaptación a nuevas herramientas digitales y sistemas.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>🎓 Formación Académica</h2>
+                <p><strong>Instituto Tecnológico Superior de Acatlán de Osorio (ITSAO)</strong><br>
+                <em>Estudiante de [Tu Carrera] — Periodo: Actual</em></p>
+            </div>
+
+            <div class="section">
+                <h2>Proyectos Relevantes</h2>
+                <div class="project-item">
+                    <strong>⚙️ Sistemas y Tecnología</strong>
+                    <li>Desarrollo de proyectos escolares, análisis con enfoque educativo y social.</li>
+                </div>
+                <div class="project-item">
+                    <strong>🔍 Investigación Social</strong>
+                    <li>Elaboración de casos de estudio y documentación académica.</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="section">
+                <h2>Conocimientos y Habilidades</h2>
+                <table class="skills-table">
+                    <tr>
+                        <th class="skills-header">TÉCNICAS</th>
+                        <th class="skills-header">INTERPERSONALES</th>
+                    </tr>
+                    <tr>
+                        <td class="skills-cell">
+                            <ul>
+                                <li>Investigación y análisis de datos</li>
+                                <li>Reportes técnicos</li>
+                                <li>Microsoft Office</li>
+                                <li>Sistemas TI</li>
+                            </ul>
+                        </td>
+                        <td class="skills-cell">
+                            <ul>
+                                <li>Trabajo colaborativo</li>
+                                <li>Organización</li>
+                                <li>Comunicación</li>
+                                <li>Puntualidad y ética</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Idiomas</h2>
+                <ul>
+                    <li><strong>Español:</strong> Nativo</li>
+                    <li><strong>Inglés:</strong> Básico</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Actitudes y Valores</h2>
+                <ul>
+                    <li>Compromiso y Responsabilidad</li>
+                    <li>Disposición constante para aprender</li>
+                    <li>Orientación a resultados</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
